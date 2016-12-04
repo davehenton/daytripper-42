@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.text-container {
+    height: 762px;
+    overflow: auto;
+}
+
+body {
+    background-image: asset-url("default.jpeg");
+    background-repeat: no-repeat !important;
+    /*?\background-size: cover !important;*/
+    font-family: "Helvetica" !important;
+    text-align: center;
+    font-size: 18px !important;
+    background-size: 100% !important;
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.name {
+    font-family: "Reenie Beanie" !important;
+    font-size: 128px !important;
+    text-align: center;
+    margin-top: 75px;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 30px !important;
+    }
+}
+
+#nav-load {
+    position: relative;
+    margin-top: 20%;
+}
+
+#loading {
+    height: 250px;
+    top: 20%;
+    z-index: -1;
+}
+
+#loading>svg {
+    padding: 20px;
+    height: 100%;
+}
+
+#octo {
+    position: absolute;
+    // display: block;
+    // margin-top: 83%;
+    // margin-left: 86%;
+    left: 10px;
+    bottom: 3px;
+}
+
+#pause {
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    opacity: .6;
+}
+
+// #pause:hover {
+//     background-color: gray;
+//     color: white;
+// }
+
+/*#text {
+  font-size: 17px !important;
+}*/
